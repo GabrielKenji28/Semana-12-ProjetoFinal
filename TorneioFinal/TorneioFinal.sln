@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Business", "1-Business", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Infra", "2-Infra", "{54A4B54F-F11E-4ACB-8A05-3C0DA07246E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation.csproj", "{12C8907B-3F73-4CB1-9907-437FC2B1BD5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{12C8907B-3F73-4CB1-9907-437FC2B1BD5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{80DEED79-2A38-4AC4-956A-29ECF5A4F08C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{80DEED79-2A38-4AC4-956A-29ECF5A4F08C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{C309A1A7-BFFF-4843-B84E-BECE98DFDA82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "Infra\Infra.csproj", "{C309A1A7-BFFF-4843-B84E-BECE98DFDA82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

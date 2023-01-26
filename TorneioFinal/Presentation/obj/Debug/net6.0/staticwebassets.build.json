@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rYGboxx+6xaJ9/L0N4PaKkTidNzI/G23SAPaEkvgpl4=",
+  "Hash": "OBTOaOjIDQvyxDvV8jRl4iABmvr78+liSBFzfB6iCws=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -68,6 +68,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Presentation\\wwwroot\\css\\style.css",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
       "Identity": "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Presentation\\wwwroot\\favicon.ico",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Presentation\\wwwroot\\imagens\\neymar.jfif",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "imagens/neymar.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\neymar.jfif"
     },
     {
       "Identity": "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Presentation\\wwwroot\\js\\site.js",
