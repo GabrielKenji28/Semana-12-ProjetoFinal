@@ -1,14 +1,23 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Business.Interfaces;
+using Infra.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers
 {
     public class NewViewsController : Controller
     {
+        private readonly IParticipanteService _participanteService;
+        public NewViewsController(IParticipanteService participanteService)
+        {
+            _participanteService = participanteService;
+        }
+
+
         // GET: NewViewsController
         public ActionResult Index()
         {
-            return View();
+            return View(_participanteService.ListandoParticipantes());
         }
 
         // GET: NewViewsController/Details/5
