@@ -1,4 +1,5 @@
 ﻿using Infra.Context;
+using Infra.Interfaces;
 using Infra.Object;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Infra.Repositories
 {
-    public class TorneioRepository
+    public class TorneioRepository : ITorneioRepository
     {
         private readonly BancoContext _bancoContext;
 
