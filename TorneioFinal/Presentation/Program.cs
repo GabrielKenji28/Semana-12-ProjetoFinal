@@ -1,4 +1,6 @@
 using Infra.Context;
+using Infra.Interfaces;
+using Infra.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BancoContext>
     (options => options.UseSqlServer(builder.Configuration["ConnectionStrings:DataBase"]));
 
+builder.Services.AddScoped<ITorneioRepository, TorneioRepository>();
+builder.Services.AddScoped<IParticipanteRepository, IParticipanteRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
