@@ -782,6 +782,21 @@
             "rid": "win"
           }
         }
+      },
+      "Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.13",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13"
+        },
+        "compile": {
+          "bin/placeholder/Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.dll": {}
+        }
       }
     }
   },
@@ -2003,10 +2018,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Infra/1.0.0": {
+      "type": "project",
+      "path": "../Infra/Infra.csproj",
+      "msbuildProject": "../Infra/Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Infra >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.13",
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.13",
@@ -2048,7 +2069,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Infra\\Infra.csproj": {
+              "projectPath": "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Infra\\Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
