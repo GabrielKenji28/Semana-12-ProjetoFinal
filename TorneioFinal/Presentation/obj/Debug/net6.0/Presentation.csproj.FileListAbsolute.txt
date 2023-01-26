@@ -62,3 +62,5 @@ C:\Users\fh178\Desktop\Plano de estágio\Torneiou\semana-12-torneio\TorneioFinal
 C:\Users\fh178\Desktop\Plano de estágio\Torneiou\semana-12-torneio\TorneioFinal\Presentation\obj\Debug\net6.0\Presentation.pdb
 C:\Users\fh178\Desktop\Plano de estágio\Torneiou\semana-12-torneio\TorneioFinal\Presentation\obj\Debug\net6.0\Presentation.genruntimeconfig.cache
 C:\Users\fh178\Desktop\Plano de estágio\Torneiou\semana-12-torneio\TorneioFinal\Presentation\obj\Debug\net6.0\ref\Presentation.dll
+C:\Users\fh178\Desktop\Plano de estágio\Torneiou\semana-12-torneio\TorneioFinal\Presentation\bin\Debug\net6.0\Business.dll
+C:\Users\fh178\Desktop\Plano de estágio\Torneiou\semana-12-torneio\TorneioFinal\Presentation\bin\Debug\net6.0\Business.pdb

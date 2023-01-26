@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Infra.Object;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Infra.Interfaces
 {
     public interface IParticipanteRepository
     {
-
+        public List<ParticipanteModel> ListarParticipantes();
     }
 }

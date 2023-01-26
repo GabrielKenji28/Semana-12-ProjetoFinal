@@ -1,3 +1,5 @@
+using Business.Interfaces;
+using Business.Services;
 using Infra.Context;
 using Infra.Interfaces;
 using Infra.Repositories;
@@ -12,7 +14,9 @@ builder.Services.AddDbContext<BancoContext>
     (options => options.UseSqlServer(builder.Configuration["ConnectionStrings:DataBase"]));
 
 builder.Services.AddScoped<ITorneioRepository, TorneioRepository>();
-builder.Services.AddScoped<IParticipanteRepository, IParticipanteRepository>();
+builder.Services.AddScoped<IParticipanteRepository, ParticipanteRepository>();
+builder.Services.AddScoped<IParticipanteService, ParticipanteService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

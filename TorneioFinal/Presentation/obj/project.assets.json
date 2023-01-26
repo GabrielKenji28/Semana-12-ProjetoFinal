@@ -783,6 +783,22 @@
           }
         }
       },
+      "Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Infra": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.13",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13"
+        },
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      },
       "Infra/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2019,6 +2035,11 @@
         "version.txt"
       ]
     },
+    "Business/1.0.0": {
+      "type": "project",
+      "path": "../Business/Business.csproj",
+      "msbuildProject": "../Business/Business.csproj"
+    },
     "Infra/1.0.0": {
       "type": "project",
       "path": "../Infra/Infra.csproj",
@@ -2027,6 +2048,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Business >= 1.0.0",
       "Infra >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.13",
@@ -2070,6 +2092,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Business\\Business.csproj"
+            },
             "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Infra\\Infra.csproj": {
               "projectPath": "C:\\Users\\fh178\\Desktop\\Plano de estágio\\Torneiou\\semana-12-torneio\\TorneioFinal\\Infra\\Infra.csproj"
             }
