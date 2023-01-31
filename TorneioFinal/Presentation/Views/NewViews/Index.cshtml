@@ -19,32 +19,35 @@
 	<hr />
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col card-inteiro">
-				<div class="frame11">
-					<div class="nomeLutador">
-						Neymar Jr.
-					</div>
-					<div class="frame12">
-						<div class="fotoLutador">
-							<img src="imagens/neymar.jfif">
+			@foreach (var participante in Model)
+			{
+				<div class="col card-inteiro">
+					<div class="frame11">
+						<div class="nomeLutador">
+							@participante.Nome
 						</div>
-						<div class="frame9">
-							<div class="idade">
-								<p>Idade: 10</p>
+						<div class="frame12">
+							<div class="fotoLutador">
+								<img src="imagens/neymar.jfif">
 							</div>
-							<div class="placar">
-								<p>Placar: 20V - 10D</p>
-							</div>
-							<div class="frame10">
-								<div class="titulos">
-									<p>Títulos: 3 </p>
+							<div class="frame9">
+								<div class="idade">
+									<p>Idade: @participante.Idade</p>
 								</div>
+								<div class="placar">
+									<p>Placar: @participante.Vitorias V - @participante.Derrotas D</p>
+								</div>
+								<div class="frame10">
+									<div class="titulos">
+										<p>Gols: @participante.Gols </p>
+									</div>
 
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			}
 			<div class="col card-inteiro">
 				<div class="frame11">
 					<div class="nomeLutador">
@@ -125,32 +128,32 @@
 			</div>
 			<div class="row">
 				@foreach( var participante in Model){
-					<div class="col card-inteiro">
-				<div class="frame11">
-					<div class="nomeLutador">
-						@participante.Nome
-					</div>
-					<div class="frame12">
-						<div class="fotoLutador">
-							<img src="imagens/neymar.jfif">
+				<div class="col card-inteiro">
+					<div class="frame11">
+						<div class="nomeLutador">
+							@participante.Nome
 						</div>
-						<div class="frame9">
-							<div class="idade">
-								<p>Idade: @participante.Idade</p>
+						<div class="frame12">
+							<div class="fotoLutador">
+								<img src="imagens/neymar.jfif">
 							</div>
-							<div class="placar">
-								<p>Placar: @participante.Vitorias V - @participante.Derrotas D</p>
-							</div>
-							<div class="frame10">
-								<div class="titulos">
-									<p>Gols: @participante.Gols </p>
+							<div class="frame9">
+								<div class="idade">
+									<p>Idade: @participante.Idade</p>
 								</div>
+								<div class="placar">
+									<p>Placar: @participante.Vitorias V - @participante.Derrotas D</p>
+								</div>
+								<div class="frame10">
+									<div class="titulos">
+										<p>Gols: @participante.Gols </p>
+									</div>
 
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 				}
 				<div class="col">
 					Sexto participante

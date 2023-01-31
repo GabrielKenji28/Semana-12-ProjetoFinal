@@ -29,5 +29,11 @@ namespace Business.Services
                 throw new Exception("Erro ao listar os itens " + e.Message);
             }
         }
+        public IList<ParticipanteModel> OrganizaPorIdade(List<ParticipanteModel> participanteModels)
+        {
+            List<ParticipanteModel> ListaPorIdade = new List<ParticipanteModel>();
+            ListaPorIdade = participanteModels.OrderBy(x => x.Idade).ToList();
+            return ListaPorIdade;
+        }
     }
 }
