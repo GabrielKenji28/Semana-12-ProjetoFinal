@@ -22,5 +22,7 @@ namespace Infra.Repositories
         {
             return _bancoContext.Torneios.ToList();
         }
+
+
     }
 }

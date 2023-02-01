@@ -10,5 +10,6 @@ namespace Business.Interfaces
     public interface IParticipanteService
     {
         public List<ParticipanteModel> ListandoParticipantes();
+        public List<ParticipanteModel> OrganizaPorIdade(List<ParticipanteModel> listaDesordenada );
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Business.Interfaces;
 using Infra.Interfaces;
+using Infra.Object;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,8 +9,10 @@ namespace Presentation.Controllers
     public class NewViewsController : Controller
     {
         private readonly IParticipanteService _participanteService;
-        public NewViewsController(IParticipanteService participanteService)
+        private readonly ITorneioService _torneioService;
+        public NewViewsController(IParticipanteService participanteService, ITorneioService torneioService)
         {
+            _torneioService = torneioService;
             _participanteService = participanteService;
         }
 
@@ -32,19 +35,17 @@ namespace Presentation.Controllers
             return View();
         }
 
-        // POST: NewViewsController/Create
+        // POST: NewViewsController/
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult EnviaParticipantes(List<int> ids)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            Console.WriteLine(ids);
+            List<ParticipanteModel> listaParticipantes = new List<ParticipanteModel>();
+            listaParticipantes = _torneioService.TransformaParaListaParticipantes(ids);
+            listaParticipantes = _participanteService.OrganizaPorIdade(listaParticipantes);
+            Console.WriteLine(listaParticipantes);
+            return View("Index");
+
         }
 
         // GET: NewViewsController/Edit/5

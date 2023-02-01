@@ -13,9 +13,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BancoContext>
     (options => options.UseSqlServer(builder.Configuration["ConnectionStrings:DataBase"]));
 
-builder.Services.AddScoped<ITorneioRepository, TorneioRepository>();
-builder.Services.AddScoped<IParticipanteRepository, ParticipanteRepository>();
-builder.Services.AddScoped<IParticipanteService, ParticipanteService>();
+builder.Services.AddScoped<ITorneioRepository, TorneioRepository>()
+                .AddScoped<IParticipanteService, ParticipanteService>()
+                .AddScoped<IParticipanteRepository, ParticipanteRepository>()
+                .AddScoped<ITorneioService, TorneioService>();
+
+
 
 var app = builder.Build();
 

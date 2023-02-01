@@ -10,5 +10,6 @@ namespace Infra.Interfaces
     public interface IParticipanteRepository
     {
         public List<ParticipanteModel> ListarParticipantes();
+        public List<ParticipanteModel> ConverterEmListaDeObjetos(List<int> ints);
     }
 }

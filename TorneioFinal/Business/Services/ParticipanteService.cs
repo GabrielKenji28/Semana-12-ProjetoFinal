@@ -26,14 +26,15 @@ namespace Business.Services
             catch (Exception e)
             {
 
-                throw new Exception("Erro ao listar os itens " + e.Message);
+                throw new Exception("Erro ao listar os participantes : " + e.Message);
             }
         }
-        public IList<ParticipanteModel> OrganizaPorIdade(List<ParticipanteModel> participanteModels)
+        public List<ParticipanteModel> OrganizaPorIdade(List<ParticipanteModel> listaDesordenada)
         {
-            List<ParticipanteModel> ListaPorIdade = new List<ParticipanteModel>();
-            ListaPorIdade = participanteModels.OrderBy(x => x.Idade).ToList();
-            return ListaPorIdade;
+            List<ParticipanteModel> listaPorIdade = new List<ParticipanteModel>();
+            listaPorIdade = listaDesordenada.OrderBy(x => x.Idade).ToList();
+           
+            return listaPorIdade;
         }
     }
 }

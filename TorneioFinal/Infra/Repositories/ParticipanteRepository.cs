@@ -23,6 +23,27 @@ namespace Infra.Repositories
         {
             return _bancoContext.Participantes.ToList();
         }
+        public ParticipanteModel IniciarTorneio(ParticipanteModel vencedor)
+        {
+            TorneioModel torneioModel = new TorneioModel(vencedor.Nome);
+
+            _bancoContext.Torneios.Add(torneioModel);
+            _bancoContext.SaveChanges();
+            return vencedor ;
+        }
+
+        public List<ParticipanteModel> ConverterEmListaDeObjetos(List<int> ints)
+        {
+            var l = new List<ParticipanteModel>();
+            foreach(int i in ints)
+            {
+                var p = new ParticipanteModel();
+                p = _bancoContext.Participantes.Find(i);
+                l.Add(p);
+            }
+            return l;
+        }
+
 
 
     }
